@@ -1,4 +1,11 @@
-# Based on https://4sysops.com/archives/convert-json-to-a-powershell-hash-table 
+
+<#
+.Synopsis
+    Converts data from Json format into hashtable data structures.
+.Description
+    Based on https://4sysops.com/archives/convert-json-to-a-powershell-hash-table/
+    Modified from original file created by Rod Meaney (see https://devblogs.microsoft.com/powershell-community/simple-form-development-using-powershell/)
+#>
 function ConvertTo-HashtableV5 {
   [CmdletBinding()]
   [OutputType('hashtable')]
@@ -9,10 +16,10 @@ function ConvertTo-HashtableV5 {
 
   process {
     # Return null if the input is null. This can happen when calling the function
-    # recursively and a property is null.
+    # recursively and a property is null
     if ($null -eq $InputObject) {
       return $null
-    } 
+    }
 
     # Check if the input is an array or collection. If so, we also need to convert
     # those types into hash tables as well. This function will convert all child
@@ -24,11 +31,12 @@ function ConvertTo-HashtableV5 {
         }
       )
 
-      Write-Output $collection
+      # Return the array but don't enumerate it because the object may be pretty complex.
+      Write-Output -NoEnumerate $collection
     }
-    elseif ($InputObject -is [psobject]) { 
-      #If the object has properties that need enumaration
-      # Convert it to its own has table and return it
+    elseif ($InputObject -is [psobject]) {
+      # If the object has properties that need enumeration
+      # Convert it to its own hash table and return it.
       $hash = @{}
       foreach ($property in $InputObject.PSObject.Properties) {
         $hash[$property.Name] = ConvertTo-HashtableV5 -InputObject $property.Value
@@ -42,4 +50,4 @@ function ConvertTo-HashtableV5 {
     }
   }
 }
-Export-ModuleMember -Function ConvertTo-HashtableV5
+Export-ModuleMember -function ConvertTo-HashtableV5

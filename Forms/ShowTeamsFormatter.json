@@ -1,0 +1,303 @@
+{
+    "Form":  {
+                 "Text":  "Teams Chat Formatter ",
+                 "Width":  865,
+                 "Height":  680,
+                 "MinWidth":  610,
+                 "MinHeight":  280,
+                 "DefaultOutputFile":  "",
+                 "BackColor":  {
+                                   "R":  49,
+                                   "G":  60,
+                                   "B":  72
+                               }
+             },
+    "Tabs":  [
+                 {
+                     "Name":  "tab_Home",
+                     "Text":  "Home",
+                     "Anchors":  [
+                                     "Top",
+                                     "Right",
+                                     "Bottom",
+                                     "Left"
+                                 ],
+                     "x":  4,
+                     "y":  22,
+                     "Size-x":  850,
+                     "Size-y":  640,
+                     "BackColor":  {
+                                       "R":  49,
+                                       "G":  60,
+                                       "B":  72
+                                   },
+                     "Elements":  [
+                                      {
+                                          "Name":  "label_InputText",
+                                          "Type":  "Label",
+                                          "Text":  "Input",
+                                          "FontName":  "Microsoft YaHei",
+                                          "ForeColor":  {
+                                                            "R":  144,
+                                                            "G":  149,
+                                                            "B":  161
+                                                        },
+                                          "x":  180,
+                                          "y":  6,
+                                          "Anchors":  [
+                                                          "Top"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "label_OutputText",
+                                          "Type":  "Label",
+                                          "Text":  "Output",
+                                          "FontName":  "Microsoft YaHei",
+                                          "ForeColor":  {
+                                                            "R":  144,
+                                                            "G":  149,
+                                                            "B":  161
+                                                        },
+                                          "x":  610,
+                                          "y":  6,
+                                          "Anchors":  [
+                                                          "Top"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "textbox_Input",
+                                          "Type":  "TextBox",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  25,
+                                                            "G":  31,
+                                                            "B":  37
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  245,
+                                                            "G":  247,
+                                                            "B":  248
+                                                        },
+                                          "Size-x":  420,
+                                          "Size-y":  515,
+                                          "x":  5,
+                                          "y":  30,
+                                          "Multiline":  "true",
+                                          "Scrollbars":  "Vertical",
+                                          "MaxLength":  524288
+                                      },
+                                      {
+                                          "Name":  "textbox_Output",
+                                          "Type":  "TextBox",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  25,
+                                                            "G":  31,
+                                                            "B":  37
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  245,
+                                                            "G":  247,
+                                                            "B":  248
+                                                        },
+                                          "Size-x":  420,
+                                          "Size-y":  515,
+                                          "x":  432,
+                                          "y":  30,
+                                          "Multiline":  "true",
+                                          "Scrollbars":  "Vertical"
+                                      },
+                                      {
+                                          "Name":  "button_ClearInput",
+                                          "Type":  "Button",
+                                          "Text":  "Clear Input",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  39,
+                                                            "G":  46,
+                                                            "B":  54
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  130,
+                                          "Size-y":  46,
+                                          "x":  5,
+                                          "y":  540,
+                                          "Anchors":  [
+                                                          "Bottom",
+                                                          "Left"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "button_ImportFile",
+                                          "Type":  "Button",
+                                          "Text":  "Import from File",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  39,
+                                                            "G":  46,
+                                                            "B":  54
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  130,
+                                          "Size-y":  46,
+                                          "x":  5,
+                                          "y":  590,
+                                          "Anchors":  [
+                                                          "Bottom",
+                                                          "Left"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "button_FormatText",
+                                          "Type":  "Button",
+                                          "Text":  "FORMAT",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  144,
+                                                            "G":  149,
+                                                            "B":  161
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  148,
+                                          "Size-y":  95,
+                                          "x":  273,
+                                          "y":  540,
+                                          "Anchors":  [
+                                                          "Bottom"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "button_CopyToClipboard",
+                                          "Type":  "Button",
+                                          "Text":  "Copy to Clipboard",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  39,
+                                                            "G":  46,
+                                                            "B":  54
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  130,
+                                          "Size-y":  46,
+                                          "x":  715,
+                                          "y":  540,
+                                          "Anchors":  [
+                                                          "Bottom",
+                                                          "Right"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "button_OutputFile",
+                                          "Type":  "Button",
+                                          "Text":  "Save to File",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  39,
+                                                            "G":  46,
+                                                            "B":  54
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  130,
+                                          "Size-y":  46,
+                                          "x":  715,
+                                          "y":  590,
+                                          "Anchors":  [
+                                                          "Bottom",
+                                                          "Right"
+                                                      ]
+                                      },
+                                      {
+                                          "Name":  "label_HintDefaultOutput",
+                                          "Type":  "Label",
+                                          "Text":  "Set output file\nin Settings tab",
+                                          "FontName":  "Microsoft YaHei",
+                                          "ForeColor":  {
+                                                            "R":  144,
+                                                            "G":  149,
+                                                            "B":  161
+                                                        },
+                                          "x":  620,
+                                          "Y":  604,
+                                          "Anchors":  [
+                                                          "Bottom",
+                                                          "Right"
+                                                      ]
+                                      }
+                                  ]
+                 },
+                 {
+                     "Name":  "tab_Settings",
+                     "Text":  "Settings",
+                     "BackColor":  {
+                                       "R":  49,
+                                       "G":  60,
+                                       "B":  72
+                                   },
+                     "Anchors":  [
+                                     "Top",
+                                     "Right",
+                                     "Bottom",
+                                     "Left"
+                                 ],
+                     "x":  4,
+                     "y":  22,
+                     "Size-x":  850,
+                     "Size-y":  640,
+                     "Elements":  [
+                                      {
+                                          "Name":  "label_DefaultOutput",
+                                          "Type":  "Label",
+                                          "Text":  "Output File",
+                                          "FontName":  "Microsoft YaHei",
+                                          "ForeColor":  {
+                                                            "R":  144,
+                                                            "G":  149,
+                                                            "B":  161
+                                                        },
+                                          "x":  10,
+                                          "y":  10
+                                      },
+                                      {
+                                          "Name":  "button_SetDefaultOutputFile",
+                                          "Type":  "Button",
+                                          "Text":  "Select Output File",
+                                          "FontName":  "Microsoft YaHei",
+                                          "BackColor":  {
+                                                            "R":  39,
+                                                            "G":  46,
+                                                            "B":  54
+                                                        },
+                                          "ForeColor":  {
+                                                            "R":  249,
+                                                            "G":  225,
+                                                            "B":  105
+                                                        },
+                                          "Size-x":  130,
+                                          "Size-y":  46,
+                                          "x":  10,
+                                          "y":  50
+                                      }
+                                  ]
+                 }
+             ]
+}
