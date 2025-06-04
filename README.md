@@ -5,7 +5,7 @@ ps-tools contains a set of PowerShell commandlets designed to launch various cus
 
     Forms: Specifies individual form configuration and button press functionality
 
-The method for generating Windows forms from templates comes from Rod Meaney's article "Simple Form Development using PowerShell" (https://devblogs.microsoft.com/powershell-community/simple-form-development.using-powershell/). This format allows new tools to be developed by simply creating a new Json file detailing the elements that should appear on the form, and a PowerShell file containing instructions for what happens when the buttons are clicked, etc.
+The method for generating Windows forms from templates comes from Rod Meaney's article [Simple Form Development using PowerShell](https://devblogs.microsoft.com/powershell-community/simple-form-development.using-powershell/). This format allows new tools to be developed by simply creating a new Json file detailing the elements that should appear on the form, and a PowerShell file containing instructions for what happens when the buttons are clicked, etc.
 
 Below are the details of the current custom forms contained in the ps-tools folder. The Teams Chat Formatter tool is the only one at the moment.
 
